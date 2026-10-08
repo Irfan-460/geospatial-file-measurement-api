@@ -33,6 +33,11 @@ def _load_geodataframe(filepath: str, file_type: str) -> gpd.GeoDataFrame:
         tmpdir = tempfile.mkdtemp()
         try:
             with zipfile.ZipFile(filepath, 'r') as zf:
+                # Validate each entry to prevent zip slip attacks
+                for member in zf.namelist():
+                    member_path = os.path.realpath(os.path.join(tmpdir, member))
+                    if not member_path.startswith(os.path.realpath(tmpdir) + os.sep):
+                        raise ValueError(f'Unsafe zip entry detected: {member}')
                 zf.extractall(tmpdir)
             shp_files = []
             for root, _, files in os.walk(tmpdir):
