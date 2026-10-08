@@ -1,0 +1,2492 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 08, 2026 - 07:33:32
+Django version 4.2.16, using settings 'config.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:34:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:35:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:36:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:37:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:38:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:39:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:40:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:41:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:42:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:43:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:44:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:45:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:46:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:47:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:48:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:49:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:50:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:51:07] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:51:39] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:51:40] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:51:40] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:51:40] "GET /api/files/ HTTP/1.1" 500 183261
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:51:40] "GET /api/files/ HTTP/1.1" 500 183261
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:51:47] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:51:47] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:51:50] "GET /api/files/ HTTP/1.1" 500 183261
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:51:50] "GET /api/files/ HTTP/1.1" 500 183261
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:51:56] "POST /api/files/ HTTP/1.1" 500 183691
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:52:07] "GET /api/files/ HTTP/1.1" 500 183261
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:52:07] "GET /api/files/ HTTP/1.1" 500 183261
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:52:09] "GET /api/files/ HTTP/1.1" 500 183261
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:52:09] "GET /api/files/ HTTP/1.1" 500 183261
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:52:10] "GET /api/files/ HTTP/1.1" 500 183261
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:52:10] "GET /api/files/ HTTP/1.1" 500 183261
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:52:18] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:52:47] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:53:18] "HEAD /api/files/ HTTP/1.1" 500 0
+Internal Server Error: /api/files/
+Traceback (most recent call last):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 394, in _authenticate
+    self._not_authenticated()
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\request.py", line 404, in _not_authenticated
+    if api_settings.UNAUTHENTICATED_USER:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 38, in <module>
+    class Permission(models.Model):
+  File "C:\Users\skirf\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class django.contrib.auth.models.Permission doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+[08/Oct/2026 07:53:47] "HEAD /api/files/ HTTP/1.1" 500 0
+D:\Geospatial File Measurement API\backend\files\processing.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 08, 2026 - 07:53:49
+Django version 4.2.16, using settings 'config.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+D:\Geospatial File Measurement API\backend\config\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 12 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): auth.
+Run 'python manage.py migrate' to apply them.
+October 08, 2026 - 08:00:12
+Django version 4.2.16, using settings 'config.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+[08/Oct/2026 08:01:10] "GET /api/files/ HTTP/1.1" 200 2
+[08/Oct/2026 08:03:57] "HEAD /api/files/ HTTP/1.1" 200 0
+[08/Oct/2026 08:03:57] "HEAD /api/files/ HTTP/1.1" 200 0
+[08/Oct/2026 08:03:57] "GET /api/files/ HTTP/1.1" 200 2
+[08/Oct/2026 08:03:57] "GET /api/files/ HTTP/1.1" 200 2
+[08/Oct/2026 08:04:08] "POST /api/files/ HTTP/1.1" 201 269
+[08/Oct/2026 08:04:10] "GET /api/files/59e4841f-8665-46fe-9fcf-98f5b159041e/ HTTP/1.1" 200 269
+[08/Oct/2026 08:04:10] "GET /api/files/59e4841f-8665-46fe-9fcf-98f5b159041e/ HTTP/1.1" 200 269
+[08/Oct/2026 08:04:27] "HEAD /api/files/ HTTP/1.1" 200 0
+[08/Oct/2026 08:04:29] "GET /api/files/59e4841f-8665-46fe-9fcf-98f5b159041e/ HTTP/1.1" 200 269
+[08/Oct/2026 08:04:31] "GET /api/files/ HTTP/1.1" 200 271
+[08/Oct/2026 08:04:31] "GET /api/files/ HTTP/1.1" 200 271
+[08/Oct/2026 08:04:36] "GET /api/files/59e4841f-8665-46fe-9fcf-98f5b159041e/ HTTP/1.1" 200 269
+[08/Oct/2026 08:04:36] "GET /api/files/59e4841f-8665-46fe-9fcf-98f5b159041e/ HTTP/1.1" 200 269
+[08/Oct/2026 08:04:36] "GET /api/files/59e4841f-8665-46fe-9fcf-98f5b159041e/measurements/ HTTP/1.1" 200 414
+[08/Oct/2026 08:04:36] "GET /api/files/59e4841f-8665-46fe-9fcf-98f5b159041e/measurements/ HTTP/1.1" 200 414
+[08/Oct/2026 08:04:39] "GET /api/files/ HTTP/1.1" 200 271
+[08/Oct/2026 08:04:39] "GET /api/files/ HTTP/1.1" 200 271
+[08/Oct/2026 08:04:41] "GET /api/files/ HTTP/1.1" 200 271
+[08/Oct/2026 08:04:41] "GET /api/files/ HTTP/1.1" 200 271
+[08/Oct/2026 08:04:57] "HEAD /api/files/ HTTP/1.1" 200 0
+[08/Oct/2026 08:05:27] "HEAD /api/files/ HTTP/1.1" 200 0
+[08/Oct/2026 08:05:57] "HEAD /api/files/ HTTP/1.1" 200 0
+[08/Oct/2026 08:06:28] "HEAD /api/files/ HTTP/1.1" 200 0
+[08/Oct/2026 08:06:58] "HEAD /api/files/ HTTP/1.1" 200 0
+[08/Oct/2026 08:07:28] "HEAD /api/files/ HTTP/1.1" 200 0
+[08/Oct/2026 08:08:07] "HEAD /api/files/ HTTP/1.1" 200 0
+[08/Oct/2026 08:09:02] "HEAD /api/files/ HTTP/1.1" 200 0

@@ -1,0 +1,17 @@
+# Frontend
+node_modules/
+dist/
+.env
+
+# Backend
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.pyc
+backend/**/*.pyc
+backend/db.sqlite3
+backend/uploads/
+backend/.env
+
+# OS
+.DS_Store
+Thumbs.db
