@@ -2490,3 +2490,23 @@ Quit the server with CTRL-BREAK.
 [08/Oct/2026 08:07:28] "HEAD /api/files/ HTTP/1.1" 200 0
 [08/Oct/2026 08:08:07] "HEAD /api/files/ HTTP/1.1" 200 0
 [08/Oct/2026 08:09:02] "HEAD /api/files/ HTTP/1.1" 200 0
+D:\Geospatial File Measurement API\backend\config\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 08, 2026 - 08:32:22
+Django version 4.2.16, using settings 'config.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+D:\Geospatial File Measurement API\backend\files\processing.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 08, 2026 - 08:32:37
+Django version 4.2.16, using settings 'config.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
